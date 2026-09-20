@@ -1,0 +1,16 @@
+target
+*.log
+*.class
+.idea
+.vscode
+*.iml
+.DS_Store
+src/main/resources/application.properties
+target/classes/application.properties
+certs/
+*.pem
+*.crt
+*.key
+.env
+*.env
+*.env.local
