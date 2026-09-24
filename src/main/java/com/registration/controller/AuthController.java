@@ -27,7 +27,7 @@ public class AuthController {
 
     public AuthController(AuthService authService,
                           JwtUtil jwtUtil,
-                          @Value("${app.cookie.secure}") boolean cookieSecure) {
+                          @Value("${app.cookie.secure:false}") boolean cookieSecure) {
         this.authService = authService;
         this.jwtUtil = jwtUtil;
         this.cookieSecure = cookieSecure;
