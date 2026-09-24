@@ -1,11 +1,9 @@
 services:
   - type: web
     name: registration-backend
-    runtime: java
+    runtime: docker
     plan: free
     branch: main
-    buildCommand: ./mvnw clean package -DskipTests
-    startCommand: java -jar target/registration-backend-1.0.0.jar
     healthCheckPath: /api/users
     envVars:
       - key: SPRING_DATASOURCE_URL
